@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans Kr";
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+a{
+    color: inherit;
+    outline: none;
+    text-decoration: none;
+}
+button{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+input,textarea{
+    background: none;
+    border: none;
+    outline: none;
+}
+ul,li{
+    list-style: none;
+}
