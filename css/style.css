@@ -1,0 +1,357 @@
+/* header */
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 80px;
+    background-color: #fff;
+    z-index: 100000000;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo a{
+    display: flex;
+    align-items: center;
+}
+header .logo img{
+    width: 112px;
+}
+header .menu-open-btn{
+    display: flex;
+    align-items: center;
+}
+header .menu-open-btn img{
+    width: 37.5px;
+}
+
+/* header */
+
+
+/* section */
+
+.section .bg{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+.section .bg::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #000;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+.section:nth-child(1) .bg{
+    background: url("../images/bg/sec-bg01.png") no-repeat center / cover;
+}
+.section:nth-child(2) .bg{
+    background: url("../images/bg/sec-bg02.png") no-repeat center / cover;
+}
+.section:nth-child(4){
+    background-color: #555555;
+}
+
+.sec-list{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+.sec-list li{
+    display: flex;
+    align-items: center;
+}
+.sec-list li::after{
+    content: "";
+    width: 18px;
+    height: 30px;
+    background: url("../images/icons/ico-rightArrow.svg") no-repeat center / cover;
+    margin: 0 25px;
+}
+.sec-list li:nth-child(3)::after{
+    width: 30px;
+    background: url("../images/icons/ico-rightPlus.svg") no-repeat center / cover;
+}
+.sec-list li:last-child::after{
+    display: none;
+}
+.sec-list li p{
+    font-size: 16px;
+    line-height: 1.25;
+    color: #fff;
+    text-align: center;
+    border-radius: 80px;
+    height: 86px;
+    width: 250px;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+}
+.socialCountup{
+    margin-top: 100px;
+}
+.socialCountup h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.socialCountup ul{
+    display: flex;
+    gap: 70px;
+}
+.socialCountup ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.socialCountup ul li .img-box{
+    height: 75px;
+}
+.socialCountup li:first-child{
+    width: 110px;
+}
+.socialCountup li:last-child{
+    width: 93px;
+}
+
+.socialCountup p{
+    font-size: 15px;
+    color: #fff;
+}
+.socialCountup h4{
+    font-size: 23px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    margin-top: 2px;
+    gap: 6px;
+    position: relative;
+    padding-right: 20px;
+}
+.socialCountup h4 span{
+    display: inline-block;
+}
+.socialCountup h4 span::after{
+    content: "+";
+    font-size: 23px;
+    color: #fff;
+    font-weight: 600;
+    position: absolute;
+    right: 0;
+}
+
+.desc-list{
+    display: flex;
+    gap: 70px;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+.desc-list li{
+    width: calc(50% - 35px);
+    padding: 0 20px;
+    border-top: 5px solid #444;
+}
+.desc-list li h3{
+    padding: 40px 0;
+    font-size: 26px;
+    color: #444444;
+    font-weight: 600;
+}
+.desc-list li p{
+    font-size: 18px;
+    color: #444;
+    line-height: 40px;
+    font-weight: 400;
+}
+.link-group{
+    display: flex;
+    gap: 24px;
+    margin-top: 20px;
+}
+.link-group a{
+    width: 193px;
+    height: 50px;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+}
+.company-content{
+    margin-top: 150px;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 400;
+    line-height:25px;
+}
+
+/* section */
+
+
+/* common */
+
+.inner{
+    width: calc(100vw - 40px);
+    max-width:1280px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+    z-index: 1000;
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+}
+.inner.col{
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.sec-text h2{
+    font-size: 80px;
+    font-weight: 600;
+    color: #fff;
+}
+.sec-text h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+.sec-text p{
+    font-size: 18px;
+    color: #fff;
+    line-height: 40px;
+    margin-top: 50px;
+    font-weight: 400;
+}
+
+.fc-black{
+    color: #333 !important;
+}
+
+/* common */
+
+
+/* footer */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #555;
+    padding: 40px 0;
+}
+footer p{
+    font-size: 13px;
+    color: #fff;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+}
+
+/* footer */
+
+
+/* menu */
+
+.menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 500px;
+    height: 100vh;
+    z-index: 100000000;
+    background-color: #E14242;
+    right: -500px;
+    transition: 0.3s ease;
+    padding-top: 270px;
+    padding-left: 77px;
+}
+.menu.show{
+    right: 0;
+}
+.menu .menu-close-btn{
+    position: absolute;
+    top: 27px;
+    right: 56px;
+}
+.menu .menu-link{
+    font-size: 40px;
+    color: #fff;
+    line-height: 56px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.menu .menu-link a{
+    transition: 0.3s ease;
+}
+.menu .menu-link a:hover{
+    opacity: 0.6;
+}
+.menu p{
+    font-size: 13px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 25px;
+    position: absolute;
+    bottom: 78px;
+    left: 77px;
+}
+
+/* menu */
+
+
+
+
+
+
+@media all and (max-width:1600px){
+    .sec-text h2{
+        font-size: 60px;
+    }
+    .sec-text h3{
+        font-size: 18px;
+    }
+    .sec-text p{
+        font-size: 14px;
+        margin-top: 30px;
+        line-height: 30px;
+    }
+
+    .sec-list li p{
+        font-size: 14px;
+        height: 75px;
+        width: 220px;
+    }
+    .sec-list li::after{
+        width: 12px;
+        height: 20px;
+        margin: 0 20px;
+    }
+    .sec-list li:nth-child(3)::after{
+        width: 20px;
+    }
+    .socialCountup{
+        margin-top: 50px;
+    }
+}

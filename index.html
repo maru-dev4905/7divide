@@ -5,14 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>7divide</title>
+    
+    <!-- css link -->
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    <!-- fullpage.js plugin -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css" integrity="sha512-/AilQf/shuEGfh8c3DoIqcIqHZCKpiImSyt+fxIKJphHiNa6QMPb6AbDly6rkjmGr/5OZd35JtvVkbEKnCZO+A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js" integrity="sha512-XOpdFagEEv9XMxN/2EdvFL/PfGtFDjX+AkRznsFHDtdC05YWdkMnz5JZUfrbnEabOQaMc7YNTl2xPbOu3J858Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- countUp.js cdn -->
+    <script src="https://inorganik.github.io/countUp.js/dist/countUp.umd.js"></script>
+
 </head>
 <body>
     <header>
-        <h1>
-            <a href="/">
+        <h1 class="logo">
+            <a href="./">
                 <img src="./images/common/logo.png" alt="logo">
             </a>
         </h1>
@@ -20,5 +33,195 @@
             <img src="./images/icons/ico-menu.svg" alt="menu-icon">
         </button>
     </header>
+    <div id="fullpage">
+        <section class="section">
+            <div class="bg"></div>
+            <div class="inner flex">
+                <div class="sec-text">
+                    <h2>Creator Marketing Corporation</h2>
+                    <p>
+                        세븐디바이드는 크리에이터 마케팅 전문 기업입니다. 
+                    </p>
+                    <p>
+                        국내 최대의 크리에이터 네트워크 DB와 운영 노하우를 보유하고 있습니다. 
+                        <br>
+                        크리에이터별 프로필 및 성과를 데이터화하고, 
+                        <br>
+                        마케팅 효과를 예측하여 최고의 크리에티터를 매칭합니다.                    
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="bg"></div>
+            <div class="inner col">
+                <div class="sec-text">
+                    <h3>Creator DATA matching system</h3>
+                    <p>
+                        데이터기반의 크리에이터 매칭 시스템(Creator DATA matching system)을 통한 
+                        <br>
+                        평가지수와 효과 예측으로 최고의 크리에이터를 매칭합니다.                        
+                    </p>
+                </div>
+                <ul class="sec-list">
+                    <li>
+                        <p>
+                            마케팅 정보 입력
+                            <br>
+                            (제품카테고리, 단가 등)
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            집행사례 검색
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            크리에이터 검색
+                            <br>
+                            (우수사례와 비슷한 채널 및
+                            <br>
+                            구독자 프로필, 평가지수)
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            추천리스트 및 효과예측
+                            <br>
+                            (예상매출, 예상 CPV단가 등)
+                        </p>
+                    </li>
+                </ul>
+                <div class="socialCountup">
+                    <h3>Creator DATA base</h3>
+                    <ul>
+                        <li>
+                            <div class="img-box">
+                                <img src="./images/social/youtube.png" alt="youtube icon">
+                            </div>
+                            <p>YouTuber Pool</p>
+                            <h4>
+                                <span id="count0">150,000</span>
+                                <!-- <i>+</i> -->
+                            </h4>
+                        </li>
+                        <li>
+                            <div class="img-box">
+                                <img src="./images/social/instagram.png" alt="instagram icon">
+                            </div>
+                            <p>Instagram Pool</p>
+                            <h4>
+                                <span id="count1">32,000</span>
+                                <!-- <i>+</i> -->
+                            </h4>
+                        </li>
+                        <li>
+                            <div class="img-box">
+                                <img src="./images/social/webtoon.png" alt="naverWebtoon icon">
+                            </div>
+                            <p>Webtoon Artist Pool</p>
+                            <h4>
+                                <span id="count2">10,000</span>
+                                <!-- <i>+</i> -->
+                            </h4>
+                        </li>
+                        <li>
+                            <div class="img-box">
+                                <img src="./images/social/blog.png" alt="naverBlog icon">
+                            </div>
+                            <p>Bloger Pool</p>
+                            <h4>
+                                <span id="count3">78,000</span>
+                                <!-- <i>+</i> -->
+                            </h4>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="inner col">
+                <div class="sec-text">
+                    <h2 class="fc-black">What We do</h2>
+                </div>
+                <ul class="desc-list">
+                    <li>
+                        <h3>크리에이터 마케팅</h3>
+                        <p>- 유튜브 PPL 기획 및 홍보</p>
+                        <p>- 인스타그램 마케팅 기획 및 홍보</p>
+                        <p>- 블로거 마케팅 기획 및 홍보</p>
+                    </li>
+                    <li>
+                        <h3>상품유통 및 홍보</h3>
+                        <p>- 인플루언서 공동구매</p>
+                        <p>- 멤버십을 상품 입점 및 유통 (카카오페이지, 함게임 등)</p>
+                        <p>- 콜라보 제품 기획 및 판매</p>
+                    </li>
+                    <li>
+                        <h3>콘텐츠 제작 및 홍보</h3>
+                        <p>- 웹툰 제작 및 홍보</p>
+                        <p>- 애니메이션 제작 및 홍보</p>
+                        <p>- 인포그래픽 제작 및 홍보</p>
+                    </li>
+                    <li>
+                        <h3>부가사업</h3>
+                        <p>- 블록체인 개발 및 유통</p>
+                        <p>- NFT 개발 및 서비스</p>
+                        <p>- 2.5D 메타버스 개발</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="section">
+            <div class="inner col">
+                <div class="sec-text">
+                    <h2>Work with us</h2>
+                    <p>7divide와 함꼐 성공적인 마케팅을 진행하세요!</p>
+                    <div class="link-group">
+                        <a href="mailto:mo7377@naver.com" target="_blank">프로젝트 의뢰하기</a>
+                        <a href="./7divide_portfolio.pdf" download="">상품소개서 다운로드</a>
+                    </div>
+                </div>
+                <div class="company-content">
+                    <p>
+                        A. 서울특별시 종로구 새문안로3길 3, 내일신문 B1층 
+                        <br>
+                        <br>
+                        T. +82. 070-4106-7771 
+                        <br>
+                        E. mo7377@naver.com                        
+                    </p>
+                </div>
+            </div>
+        </section>
+        <footer class="section fp-auto-height" >
+            <p>ⓒ 7divide Corp.</p>
+        </footer>
+    </div>
+
+    <div class="menu">
+        <button class="menu-close-btn">
+            <img src="./images/icons/ico-close.svg" alt="close-icon">
+        </button>
+        <div class="menu-link">
+            <a href="./">About Us</a>
+            <a href="./7divide_portfolio.pdf" download>Portfolio</a>
+        </div>
+        <p>
+            ⓒ 7divide Corp. 
+            <br>
+            <br>
+            A. 서울특별시 종로구 새문안로3길 3, 내일신문 B1층 
+            <br>
+            <br>
+            T. +82. 070-4106-7771 
+            <br>
+            E. mo7377@naver.com            
+        </p>
+    </div>
+
+    <script src="./js/fullpage.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
